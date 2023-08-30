@@ -1,0 +1,13 @@
+<!-- item_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Warna latar belakang -->
+    <corners android:radius="8dp" /> <!-- Jari-jari sudut -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" /> <!-- Padding -->
+    <stroke
+        android:width="4dp"
+        android:color="#41644A" /> <!-- Warna dan ketebalan garis tepi -->
+</shape>

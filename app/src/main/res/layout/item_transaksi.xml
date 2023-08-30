@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cd_riwayat"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/fotoImageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_image"
+            android:background="#FFFFFF"
+            android:padding="2dp"
+            android:elevation="2dp"
+            android:contentDescription="Item Image" />
+
+        <TextView
+            android:id="@+id/tokoNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:text="Nama Toko"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_toEndOf="@+id/fotoImageView"
+            android:layout_marginStart="8dp"
+            android:layout_alignTop="@id/fotoImageView" />
+
+        <TextView
+            android:id="@+id/salesNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tokoNameTextView"
+            android:layout_alignEnd="@id/tokoNameTextView"
+            android:layout_marginTop="3dp"
+            android:textSize="@dimen/_1sdp"
+            android:text="Nama Sales"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/waktuTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tokoNameTextView"
+            android:layout_alignStart="@id/tokoNameTextView"
+            android:layout_marginTop="-1dp"
+            android:text="Waktu"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/teks_waktu" />
+
+        <TextView
+            android:id="@+id/totalPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/waktuTextView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/fotoImageView"
+            android:text="Total"
+            android:fontFamily="@font/poppins_medium"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/arrowImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="Arrow Image"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/quantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/totalPriceTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="52dp"
+            android:gravity="end"
+            android:fontFamily="@font/poppins_light"
+            android:text="10"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/quantityTextView"
+            android:layout_alignBottom="@+id/quantityTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="2dp"
+            android:text="Packs"
+            android:fontFamily="@font/poppins_light"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
